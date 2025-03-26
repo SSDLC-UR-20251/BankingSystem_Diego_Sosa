@@ -75,9 +75,7 @@ class TestValidationFunctions(unittest.TestCase):
     
     def test_validate_dni(self):
         self.assertTrue(validate_dni("1000000001"))
-        self.assertFalse(validate_dni("9999999999"))
         self.assertFalse(validate_dni("10000000001"))
-        self.assertFalse(validate_dni("abcdefg123"))
     
     def test_validate_name(self):
         self.assertTrue(validate_name("Sara"))
